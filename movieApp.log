@@ -1,0 +1,1122 @@
+2023-06-19 20:10:45.828  INFO 11496 --- [restartedMain] com.fse1.movieapp.MovieappApplication    : Starting MovieappApplication using Java 16.0.2 on LTIN135118 with PID 11496 (C:\Users\2101659\Desktop\moviebookingMA\MovieBooking-App-master\MovieBooking-App-master\movieapp\target\classes started by 2101659 in C:\Users\2101659\Desktop\moviebookingMA\MovieBooking-App-master\MovieBooking-App-master\movieapp)
+2023-06-19 20:10:45.842 DEBUG 11496 --- [restartedMain] com.fse1.movieapp.MovieappApplication    : Running with Spring Boot v2.7.10, Spring v5.3.26
+2023-06-19 20:10:45.843  INFO 11496 --- [restartedMain] com.fse1.movieapp.MovieappApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:10:45.978  INFO 11496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-19 20:10:45.979  INFO 11496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-19 20:10:48.632  INFO 11496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-19 20:10:48.766  INFO 11496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 4 MongoDB repository interfaces.
+2023-06-19 20:10:52.249  INFO 11496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-06-19 20:10:52.273  INFO 11496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-19 20:10:52.274  INFO 11496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-06-19 20:10:52.542  INFO 11496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-19 20:10:52.543  INFO 11496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6561 ms
+2023-06-19 20:10:53.842  INFO 11496 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/16.0.2+7-67"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6c8b65a8], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@24cc306]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3ba84827], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-19 20:10:53.869  INFO 11496 --- [cluster-ClusterId{value='649068f586862c2a9ff6201c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2023-06-19 20:10:53.869  INFO 11496 --- [cluster-rtt-ClusterId{value='649068f586862c2a9ff6201c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2023-06-19 20:10:53.870  INFO 11496 --- [cluster-ClusterId{value='649068f586862c2a9ff6201c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=66992900}
+2023-06-19 20:10:55.105 DEBUG 11496 --- [restartedMain] c.f.m.security.jwt.AuthTokenFilter       : Filter 'authenticationJwtTokenFilter' configured for use
+2023-06-19 20:10:55.232  INFO 11496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-19 20:10:58.947  INFO 11496 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-06-19 20:10:59.045  INFO 11496 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23802186, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62838f25, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d228fae, org.springframework.security.web.header.HeaderWriterFilter@3e3b714f, org.springframework.web.filter.CorsFilter@57213c79, org.springframework.security.web.authentication.logout.LogoutFilter@4f5c93da, com.fse1.movieapp.security.jwt.AuthTokenFilter@6668434, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4743681e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ed7b5bc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50825406, org.springframework.security.web.session.SessionManagementFilter@3928aa31, org.springframework.security.web.access.ExceptionTranslationFilter@4dcf1cf9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf38a2d]
+2023-06-19 20:11:00.439  INFO 11496 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-06-19 20:11:00.764  INFO 11496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-06-19 20:11:00.768  INFO 11496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-06-19 20:11:00.769  INFO 11496 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1687185660759
+2023-06-19 20:11:00.814  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:00.819  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:00.932  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:00.933  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:01.134  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:01.135  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:01.339  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:01.340  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:01.846  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:01.847  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:02.143  INFO 11496 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-19 20:11:02.144  INFO 11496 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-19 20:11:02.147  INFO 11496 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-19 20:11:02.587  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:02.587  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:03.424  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:03.425  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:04.356  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:04.357  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:05.452  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:05.453  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:06.608  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:06.609  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:07.774  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:07.775  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:08.711  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:08.712  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:09.797  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:09.799  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:10.823  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:10.825  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:12.069  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:12.070  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:13.001  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:13.003  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:13.877  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:13.878  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:15.071  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:15.073  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:15.945  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:15.946  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:17.141  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:17.143  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:18.011  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:18.012  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:19.166  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:19.168  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:20.253  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:20.255  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:21.450  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:21.451  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:22.429  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:22.431  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:23.518  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:23.520  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:24.500  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:24.501  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:25.546  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:25.547  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:26.742  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:26.743  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:27.834  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:27.835  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:29.030  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:29.032  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:30.117  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:30.119  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:30.797  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2023-06-19 20:11:30.800 ERROR 11496 --- [restartedMain] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.10.jar:2.7.10]
+	at com.fse1.movieapp.MovieappApplication.main(MovieappApplication.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.10.jar:2.7.10]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.1.2.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405) ~[spring-kafka-2.8.11.jar:2.8.11]
+	... 20 common frames omitted
+
+2023-06-19 20:11:31.239  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:31.241  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:32.222  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:32.223  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:33.415  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:33.417  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:34.395  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:34.396  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:35.544  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:35.545  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:36.632  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:36.634  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:37.619  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:37.622  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:38.677  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:38.679  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:39.839  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:39.840  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:40.786  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2023-06-19 20:11:40.787  WARN 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 20:11:40.802  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2023-06-19 20:11:40.803  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-06-19 20:11:40.805  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2023-06-19 20:11:40.805  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Timed out 2 remaining operation(s) during close.
+2023-06-19 20:11:40.813  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-06-19 20:11:40.813  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-06-19 20:11:40.813  INFO 11496 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-06-19 20:11:40.878  INFO 11496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-19 20:11:40.885  INFO 11496 --- [restartedMain] com.fse1.movieapp.MovieappApplication    : Started MovieappApplication in 56.362 seconds (JVM running for 58.922)
+2023-06-19 20:11:48.065 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:11:48.065 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:11:48.209  INFO 11496 --- [http-nio-8081-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:15}] to localhost:27017
+2023-06-19 20:11:48.210  INFO 11496 --- [http-nio-8081-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:16}] to localhost:27017
+2023-06-19 20:11:48.346 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:11:48.347 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:12:01.048 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:12:01.049 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:12:01.061 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:12:01.064 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:13:13.311 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:13:13.340 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:13:50.350 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:13:50.358 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:14:18.072 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:14:18.079 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:15:25.033 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:15:25.035 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:15:25.041 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:15:25.042 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:16:09.314 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:16:09.316 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:16:09.329 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:16:09.330 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:18:19.042 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:18:19.043 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:18:19.054 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:18:19.054 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:19:04.930 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:19:04.943 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:19:38.384 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:19:38.384 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:19:38.393 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:19:38.393 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:22:27.923 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:22:27.927 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:22:27.932 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:22:27.933 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:26:01.219 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:26:01.219 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:26:01.233 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:26:01.236 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:27:06.305 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:27:06.311 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:27:06.324 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:27:06.325 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:28:26.679 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:28:26.680 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:28:26.690 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:28:26.690 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:28:51.587 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:28:51.588 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:28:51.599 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:28:51.599 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:29:18.402 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:29:18.403 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:29:18.408 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:29:18.408 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:29:44.914 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:29:44.915 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:29:44.922 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:29:44.923 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:31:11.483 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:31:11.488 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:31:11.496 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:31:11.502 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:32:58.635 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:32:58.644 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:32:58.646 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:32:58.650 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:34:35.295 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:34:35.295 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:34:35.305 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:34:35.305 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:34:40.156 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 20:34:40.309 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : currently no movies are available
+2023-06-19 20:39:32.418 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:39:32.430 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:39:32.431 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:39:32.436 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:39:34.204 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 20:39:34.209 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 20:40:46.149 ERROR 11496 --- [http-nio-8081-exec-5] c.f.m.security.jwt.AuthEntryPointJwt     : Unauthorized error: Bad credentials
+2023-06-19 20:41:01.720 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:41:01.729 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:41:01.729 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:41:01.737 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:41:16.034 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:41:16.042 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:41:16.046 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:41:16.055 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:41:17.561 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 20:41:17.573 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 20:42:56.921 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:42:56.921 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:42:56.929 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:42:56.930 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:43:09.041 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:43:09.052 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:43:09.052 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:43:09.059 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:43:10.577 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 20:43:10.582 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 20:43:37.864 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:43:37.870 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 20:43:37.875 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:43:37.885 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 20:43:39.783 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 20:43:39.791 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 21:23:30.158 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:23:30.158 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:23:30.224 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:23:30.224 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:24:02.789 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:24:02.792 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:24:02.797 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:24:02.797 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:38:10.665 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:38:10.666 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:38:10.671 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:38:10.671 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:38:22.968 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:38:22.969 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:38:22.972 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:38:22.974 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:39:24.942 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:39:24.943 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:39:24.946 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:39:24.947 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:40:27.981 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:40:27.984 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:40:27.988 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:40:27.988 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:40:43.585 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:40:43.592 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:40:43.593 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:40:43.596 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:41:29.620 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:41:29.620 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:41:29.622 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:41:29.623 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:10.308 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:10.308 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:10.311 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:10.312 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:28.801 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 21:42:28.819 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 21:42:35.432 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:35.432 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:35.438 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:35.438 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:51.542 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:51.542 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:42:51.546 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:42:51.546 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:01.148 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:01.148 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:01.151 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:01.151 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:08.129 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:08.129 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:08.133 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:08.133 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:24.214 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:24.214 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:24.222 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:24.222 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:33.174 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:33.174 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:33.178 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:33.178 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:51.205 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:51.207 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:43:51.211 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:43:51.211 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:46:25.539 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:46:25.539 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:46:25.543 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:46:25.543 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:16.432 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:16.432 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:16.435 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:16.435 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:32.777 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:32.781 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:32.784 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:32.789 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:40.902 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:40.902 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:47:40.912 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:47:40.912 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:48:19.564 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:48:19.564 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:48:19.568 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:48:19.569 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:48:41.485 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:48:41.485 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:48:41.490 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:48:41.490 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:50:30.247 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:50:30.247 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:50:30.249 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:50:30.249 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:51:15.140 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:51:15.141 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:51:15.143 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:51:15.144 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:51:29.743 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:51:29.743 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 21:51:29.748 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 21:51:29.748 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:09:00.901 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:09:00.909 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:09:00.915 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:09:00.917 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:10:24.272 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:10:24.275 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:10:24.281 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:10:24.285 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:14:32.213 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:14:32.222 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:14:32.238 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:14:32.243 DEBUG 11496 --- [http-nio-8081-exec-1] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:15:02.661 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:15:02.668 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:15:02.678 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:15:02.682 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:15:44.262 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:15:44.267 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:15:44.279 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:15:44.287 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:02.833 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:02.837 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:02.853 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:02.857 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:35.404 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:35.410 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:35.416 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:35.418 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:50.784 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:50.792 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:16:50.808 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:16:50.813 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:17:49.544 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:17:49.549 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:17:49.578 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:17:49.583 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:17:58.253 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : user1 entered to book tickets
+2023-06-19 22:17:58.501 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : seat is already booked
+2023-06-19 22:17:58.524  WARN 11496 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.fse1.movieapp.exception.SeatAlreadyBooked: Seat number 1 is already booked]
+2023-06-19 22:18:26.339 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : user1 entered to book tickets
+2023-06-19 22:18:26.360  INFO 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : available tickets 109
+2023-06-19 22:18:26.440 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : user1 booked 2 tickets
+2023-06-19 22:18:26.521  INFO 11496 --- [http-nio-8081-exec-5] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2023-06-19 22:18:26.617  INFO 11496 --- [http-nio-8081-exec-5] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-06-19 22:18:26.749  INFO 11496 --- [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-06-19 22:18:26.750  INFO 11496 --- [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-06-19 22:18:26.752  INFO 11496 --- [http-nio-8081-exec-5] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1687193306748
+2023-06-19 22:18:27.632  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:27.634  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:27.635  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:27.740  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:27.740  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:27.741  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:27.895  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:27.896  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:27.897  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:28.102  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:28.104  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:28.104  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:28.562  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:28.563  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:28.563  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:29.525  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:29.525  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:29.526  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:30.436  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:30.437  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:30.437  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:31.299  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:31.300  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:31.301  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:32.466  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:32.467  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:32.467  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:33.580  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:33.581  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:33.581  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:34.545  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:34.546  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:34.546  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:35.507  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:35.507  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:35.509  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:36.573  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:36.575  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:36.575  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:37.536  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:37.537  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:37.537  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:38.501  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:38.504  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:38.504  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:39.466  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:39.469  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:39.470  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:40.585  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:40.586  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:40.586  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:41.805  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:41.806  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:41.807  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:42.969  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:42.970  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:42.970  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:43.879  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:43.879  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:43.881  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:44.893  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:44.894  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:44.894  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:46.106  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:46.107  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:46.107  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:46.367 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:18:46.371 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:18:46.394 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:18:46.402 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:18:47.273  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:47.273  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:47.274  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:48.448  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:48.449  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:48.450  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:49.515  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:49.516  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:49.516  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:50.736  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:50.737  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:50.738  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:51.850  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:51.851  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:51.851  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:52.814  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:52.816  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:52.817  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:53.933  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:53.933  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:53.933  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:54.844  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:54.845  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:54.845  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:55.856  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:55.857  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:55.857  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:56.871  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:56.872  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:56.872  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:57.734  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:57.736  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:57.736  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:58.746  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:58.747  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:58.747  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:18:59.810  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:18:59.810  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:18:59.810  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:00.975  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:00.976  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:00.977  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:02.187  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:02.187  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:02.187  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:03.353  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:03.355  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:03.358  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:04.218  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:04.219  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:04.219  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:05.129  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:05.130  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:05.131  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:06.195  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:06.196  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:06.196  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:07.259  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:07.260  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:07.261  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:08.224  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:08.226  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:08.226  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:09.086  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:09.087  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:09.087  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:10.047  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:10.048  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:10.048  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:11.113  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:11.113  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:11.113  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:12.126  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:12.126  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:12.126  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:13.006 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : user1 entered to book tickets
+2023-06-19 22:19:13.019  INFO 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : available tickets 109
+2023-06-19 22:19:13.028 DEBUG 11496 --- [http-nio-8081-exec-9] c.f.movieapp.controller.MovieController  : user1 booked 2 tickets
+2023-06-19 22:19:13.142  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:13.144  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:13.144  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:14.360  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:14.361  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:14.362  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:15.385  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:15.386  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:15.387  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:16.599  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:16.600  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:16.601  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:17.514  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:17.516  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:17.516  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:18.684  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:18.685  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:18.685  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:19.646  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:19.647  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:19.647  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:20.659  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:20.659  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:20.660  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:21.873  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:21.874  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:21.874  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:22.941  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:22.942  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:22.942  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:23.805  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:23.806  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:23.806  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:24.924  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:24.925  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:24.926  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:26.144  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:26.144  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:26.145  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:26.807 ERROR 11496 --- [http-nio-8081-exec-5] o.s.k.support.LoggingProducerListener    : Exception thrown when sending a message with key='null' and payload='Movie ticket booked. Booking Details are: Ticket(_id=649086da86862c2a9ff62020, loginId=user1, movieN...' to topic movietopic:
+
+org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.
+
+2023-06-19 22:19:26.824 ERROR 11496 --- [http-nio-8081-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.kafka.KafkaException: Send failed; nested exception is org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.] with root cause
+
+org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.
+
+2023-06-19 22:19:27.206  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:27.207  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:27.207  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:28.115  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:28.115  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:28.115  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:28.925  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:28.925  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:28.926  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:29.989  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:29.990  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:29.990  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:31.156  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:31.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:31.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:32.017  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:32.018  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:32.018  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:32.979  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:32.980  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:32.980  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:34.044  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:34.046  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:34.046  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:35.112  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:35.114  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:35.114  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:36.227  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:36.228  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:36.228  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:37.193  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:37.194  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:37.194  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:38.203  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:38.204  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:38.204  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:39.115  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:39.115  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:39.116  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:39.983  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:39.985  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:39.985  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:40.898  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:40.899  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:40.899  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:41.813  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:41.815  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:41.815  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:42.777  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:42.778  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:42.778  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:43.894  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:43.895  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:43.895  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:44.911  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:44.912  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:44.912  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:46.024  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:46.025  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:46.025  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:47.136  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:47.137  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:47.137  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:47.999  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:48.002  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:48.003  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:48.865  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:48.866  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:48.866  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:49.979  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:49.979  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:49.980  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:50.840  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:50.841  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:50.841  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:52.056  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:52.057  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:52.057  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:52.920  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:52.923  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:52.924  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:54.042  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:54.043  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:54.044  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:54.907  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:54.907  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:54.908  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:55.819  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:55.820  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:55.820  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:56.830  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:56.831  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:56.831  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:57.947  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:57.947  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:57.948  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:58.908  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:58.909  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:58.909  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:19:59.772  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:19:59.772  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:19:59.773  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:00.681  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:00.682  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:00.682  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:01.741  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:01.741  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:01.741  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:02.961  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:02.962  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:02.963  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:03.825  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:03.825  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:03.825  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:04.991  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:04.991  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:04.993  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:06.156  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:06.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:06.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:07.175  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:07.176  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:07.176  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:08.241  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:08.243  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:08.243  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:09.368  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:09.368  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:09.369  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:10.534  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:10.534  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:10.535  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:11.398  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:11.399  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:11.400  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:12.210  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:12.211  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:12.211  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:13.032 ERROR 11496 --- [http-nio-8081-exec-9] o.s.k.support.LoggingProducerListener    : Exception thrown when sending a message with key='null' and payload='Movie ticket booked. Booking Details are: Ticket(_id=6490870986862c2a9ff62021, loginId=user1, movieN...' to topic movietopic:
+
+org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.
+
+2023-06-19 22:20:13.034 ERROR 11496 --- [http-nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.kafka.KafkaException: Send failed; nested exception is org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.] with root cause
+
+org.apache.kafka.common.errors.TimeoutException: Topic movietopic not present in metadata after 60000 ms.
+
+2023-06-19 22:20:13.179  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:13.179  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:13.180  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:14.202  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:14.203  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:14.203  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:15.341  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:15.342  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:15.342  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:16.156  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:16.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:16.157  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:17.184  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:17.184  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:17.185  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:18.252  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:18.253  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:18.253  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:19.426  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:19.427  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:19.427  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:20.406  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:20.407  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:20.408  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:21.528  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:21.529  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:21.530  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:22.691  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:22.692  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:22.692  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:23.707  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:23.711  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:23.713  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:24.523  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:24.525  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:24.525  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:25.489  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:25.491  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:25.492  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:26.604  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:26.605  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:26.605  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:27.818  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:27.819  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:27.820  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:28.728  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:28.729  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:28.729  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:29.942  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:29.943  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:29.944  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:31.104  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:31.105  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:31.105  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:32.016  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:32.017  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:32.018  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:32.927  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:32.928  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:32.929  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:33.738  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:33.739  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:33.740  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:34.704  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:34.705  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:34.705  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:35.729  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:35.730  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:35.731  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:36.802  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:36.803  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:36.803  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:37.969  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:37.971  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:37.972  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:38.988  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:38.989  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:38.989  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:40.003  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:40.003  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:40.004  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:41.118  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:41.120  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:41.120  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:42.243  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:42.243  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:42.244  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:43.374  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:43.376  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:43.377  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:44.295  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:44.296  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:44.297  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:45.314  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:45.315  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:45.315  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:46.130  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:46.132  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:46.134  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:47.251  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:47.251  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:47.252  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:48.275  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:48.276  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:48.277  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:49.202  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:49.205  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:49.206  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:50.373  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:50.374  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:50.376  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:51.543  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:20:51.545  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-19 22:20:51.545  WARN 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-19 22:20:54.756  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition movietopic-0 to 0 since the associated topicId changed from null to QWaWU9upTgm8KxVXvb9Mew
+2023-06-19 22:20:54.770  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: KyzXS1rDTgqbNrFoHW4ttw
+2023-06-19 22:20:54.787  INFO 11496 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 18000 with epoch 0
+2023-06-19 22:21:20.385 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : user1 entered to book tickets
+2023-06-19 22:21:20.395 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : seat is already booked
+2023-06-19 22:21:20.398  WARN 11496 --- [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.fse1.movieapp.exception.SeatAlreadyBooked: Seat number 67 is already booked]
+2023-06-19 22:21:26.020 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:21:26.024 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:21:26.031 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:21:26.042 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:21:38.215 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : user1 entered to book tickets
+2023-06-19 22:21:38.222  INFO 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : available tickets 120
+2023-06-19 22:21:38.224 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : user1 booked 2 tickets
+2023-06-19 22:23:08.672 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:08.675 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:08.676 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:23:08.680 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:23:33.510 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:33.511 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:33.514 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:23:33.514 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:23:47.582 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:47.588 DEBUG 11496 --- [http-nio-8081-exec-10] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:23:47.589 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:23:47.593 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:03.454 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:03.456 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:03.457 DEBUG 11496 --- [http-nio-8081-exec-4] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:03.458 DEBUG 11496 --- [http-nio-8081-exec-8] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:08.943 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-19 22:24:08.951 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies with title:a
+2023-06-19 22:24:34.842 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : user4 entered to book tickets
+2023-06-19 22:24:34.856  INFO 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : available tickets 130
+2023-06-19 22:24:34.863 DEBUG 11496 --- [http-nio-8081-exec-2] c.f.movieapp.controller.MovieController  : user4 booked 1 tickets
+2023-06-19 22:24:40.945 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:40.949 DEBUG 11496 --- [http-nio-8081-exec-6] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:40.966 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:40.975 DEBUG 11496 --- [http-nio-8081-exec-3] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:48.934 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:48.934 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-19 22:24:48.938 DEBUG 11496 --- [http-nio-8081-exec-7] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:24:48.950 DEBUG 11496 --- [http-nio-8081-exec-5] c.f.movieapp.controller.MovieController  : listed the available movies
+2023-06-19 22:30:24.738  INFO 11496 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-19 22:33:22.236  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-19 22:33:22.326  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-19 22:33:22.334  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-19 22:33:22.368  WARN 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@16.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@16.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@16.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@16.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2023-06-19 22:33:22.370  WARN 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='649068f586862c2a9ff6201c', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@16.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@16.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:300)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:281)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:179)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2023-06-19 22:33:22.371  WARN 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='649068f586862c2a9ff6201c', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2023-06-19 22:33:22.373  WARN 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [MaintenanceTimer-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@16.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@16.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@16.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@16.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@16.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2023-06-19 22:33:22.375  WARN 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [kafka-producer-network-thread | producer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ java.base@16.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:353)
+ java.base@16.0.2/sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:178)
+ java.base@16.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@16.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//org.apache.kafka.common.network.Selector.select(Selector.java:873)
+ app//org.apache.kafka.common.network.Selector.poll(Selector.java:465)
+ app//org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:560)
+ app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:328)
+ app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2023-06-19 22:33:22.420  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-06-19 22:33:22.429  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-06-19 22:33:22.429  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-06-19 22:33:22.430  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-06-19 22:33:22.430  INFO 11496 --- [RMI TCP Connection(154)-127.0.0.1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
